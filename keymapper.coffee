@@ -1,5 +1,3 @@
-window.app ?= {}
-
 app.string2coords = (layout, excludes, text)->
   coordinates = []
 
