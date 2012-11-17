@@ -1,3 +1,6 @@
 [submodule "Keyboard-Heatmap"]
 	path = Keyboard-Heatmap
 	url = git://github.com/pa7/Keyboard-Heatmap.git
+[submodule "qunit"]
+	path = qunit
+	url = git://github.com/jquery/qunit.git
