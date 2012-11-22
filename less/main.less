@@ -1,0 +1,41 @@
+#canvas1 {
+  height: 373px;
+  width: 800px;
+  border: 1px solid #E5E5E5;
+}
+
+.sticky-footer (@footer-height: 14px, @footer-padding-top: 70px, @footer-padding-bottom: 70px, @footer-margin-top: 70px) {
+  .wrapper {
+    margin: 0 auto -(@footer-height + @footer-padding-bottom + @footer-padding-top + @footer-margin-top + 1);
+  }
+  .push {
+    height: @footer-height + @footer-padding-bottom + @footer-padding-top + @footer-margin-top + 1;
+  }
+
+  .footer {
+    margin-top: @footer-margin-top;
+    padding: @footer-padding-top 0 @footer-padding-bottom;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.footer {
+  min-width: 990px; // necessary fix for non-responsive layouts
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+
+  p {
+    margin-bottom: 0;
+    color: #777;
+  }
+}
+
+  .sticky-footer(); // sets default values for sticky footer

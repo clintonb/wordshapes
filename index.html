@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Wordshapes</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="css/main.css" rel="stylesheet">
 
   <!--CDN-->
   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -19,17 +21,7 @@
   <script type="text/javascript" src="Keyboard-Heatmap/app/keyboard-layouts.js"></script>
   <script type="text/javascript" src="js/keymapper.js"></script>
   <script type="text/javascript" src="js/wordshape.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      var $canvas = $("#canvas1")[0];
-      var $text = $("#text");
-      $text.keyup(function(){
-        var value = $text.val();
-        app.wordshape(value, $canvas);
-      });
-
-    });
-  </script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
@@ -41,12 +33,24 @@
   </div>
 </div>
 
+<div class="container">
+  <p>Create images from <a href="http://www.swype.com/">Swype</a> motions.</p>
+
   <canvas id="canvas1" style="height:373px; width:800px;"></canvas>
-  <form>
-    <div class="input-append">
-      <input class="span3" type="text" placeholder="Type something..." id="text">
-      <button class="btn" type="button" id="drawBtn">Draw!</button>
+  <div class="input-append">
+    <input class="span3" type="text" placeholder="Type something..." id="text">
+    <button class="btn" type="button" id="drawBtn">Draw!</button>
+    <button class="btn" type="button" id="saveBtn">Save</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div>
+      Developer: <a href="http://clintonblackburn.com">Clinton Blackburn</a><br>
+      Original Concept: <a href="http://dianasaville.com/">Diana Saville</a>
     </div>
-  </form>
+  </div>
+</footer>
 </body>
 </html>
