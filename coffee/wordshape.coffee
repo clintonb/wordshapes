@@ -31,6 +31,7 @@ app.wordshapeMulti = (texts, parent) ->
   height = 373
   width = 800
   parent.empty()
+  texts = texts.filter (x) -> x.trim()
   for text in texts
     if not text
       continue

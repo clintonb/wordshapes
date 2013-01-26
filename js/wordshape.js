@@ -49,6 +49,9 @@
     height = 373;
     width = 800;
     parent.empty();
+    texts = texts.filter(function(x) {
+      return x.trim();
+    });
     _results = [];
     for (_i = 0, _len = texts.length; _i < _len; _i++) {
       text = texts[_i];
