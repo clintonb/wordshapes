@@ -20,7 +20,22 @@ app.wordshapeSketch = (text, width=800, height=373, fill=true, color=0) ->
       # No need to draw this again
       processing.noLoop()
 
+
 app.wordshape = (text, canvas) ->
   height = canvas.offsetHeight
   width = canvas.offsetWidth
   processingInstance = new Processing(canvas, app.wordshapeSketch(text, width, height))
+
+
+app.wordshapeMulti = (texts, parent) ->
+  height = 373
+  width = 800
+  parent.empty()
+  for text in texts
+    if not text
+      continue
+    text = text.trim()
+    $rendering = $("<div class='rendering'><div class='text'>#{text}</div><canvas style=\"height:#{height}px; width:#{width}px;\"></canvas></div>")
+    $rendering.appendTo(parent)
+    canvas = $("canvas", $rendering)[0]
+    processingInstance = new Processing(canvas, app.wordshapeSketch(text, width, height))

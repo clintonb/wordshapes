@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wordshapes</title>
+  <title>Wordshapes: Multi</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="css/main.css" rel="stylesheet">
 
@@ -21,7 +21,7 @@
   <script type="text/javascript" src="Keyboard-Heatmap/app/keyboard-layouts.js"></script>
   <script type="text/javascript" src="js/keymapper.js"></script>
   <script type="text/javascript" src="js/wordshape.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/multi.js"></script>
   <script type="text/javascript" src="js/ga_tracking.js"></script>
 </head>
 <body>
@@ -30,22 +30,28 @@
   <div class="navbar-inner">
     <a class="brand" href="/">Wordshapes</a>
     <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="multi.html">Multi</a></li>
+      <li class=""><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Multi</a></li>
     </ul>
   </div>
 </div>
 
 <div class="container">
-  <p>Create images from <a href="http://www.swype.com/">Swype</a> motions.</p>
+  <h1>Multiple Image Generator</h1>
+  <p>Enter a words/phrases in the area below. Each line (separated by a carriage return) will be rendered as an individual image.</p>
 
-  <canvas id="canvas1" style="height:373px; width:800px;"></canvas>
-  <div class="input-append">
-    <input class="span3" type="text" placeholder="Type something..." id="text">
-    <button class="btn" type="button" id="drawBtn">Draw!</button>
-    <button class="btn" type="button" id="saveBtn">Save</button>
+  <textarea id="texts" rows="6" class="span12"></textarea><br>
+  <div class="span12" style="text-align: center;">
+    <button class="btn" type="button" id="multiDrawBtn">Draw!</button>
+  </div>
+
+  <div>
+    <h2>Rendered Images</h2>
+    <div id="renderings"><em>Nothing to see here.</em></div>
   </div>
 </div>
+
+<div id="blah"></div>
 
 <footer class="footer">
   <div class="container">

@@ -6,6 +6,7 @@ $(document).ready ->
   draw = (value) ->
     value = value or $text.val()
     processingInstance = app.wordshape(value, $canvas)  if value
+
   save = ->
     processingInstance.save "test.png"
 

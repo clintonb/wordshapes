@@ -44,4 +44,24 @@
     return processingInstance = new Processing(canvas, app.wordshapeSketch(text, width, height));
   };
 
+  app.wordshapeMulti = function(texts, parent) {
+    var $rendering, canvas, height, processingInstance, text, width, _i, _len, _results;
+    height = 373;
+    width = 800;
+    parent.empty();
+    _results = [];
+    for (_i = 0, _len = texts.length; _i < _len; _i++) {
+      text = texts[_i];
+      if (!text) {
+        continue;
+      }
+      text = text.trim();
+      $rendering = $("<div class='rendering'><div class='text'>" + text + "</div><canvas style=\"height:" + height + "px; width:" + width + "px;\"></canvas></div>");
+      $rendering.appendTo(parent);
+      canvas = $("canvas", $rendering)[0];
+      _results.push(processingInstance = new Processing(canvas, app.wordshapeSketch(text, width, height)));
+    }
+    return _results;
+  };
+
 }).call(this);
