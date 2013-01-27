@@ -31,6 +31,10 @@ body {
   margin-top: 70px;
   padding: 70px 0 70px;
 }
-#renderings .rendering canvas[class*="span"] {
+#renderings-outer .no-renderings,
+#renderings-outer .instructions {
+  font-style: italic;
+}
+#renderings-outer #renderings .rendering canvas[class*="span"] {
   margin-left: 0;
 }
