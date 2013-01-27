@@ -31,3 +31,6 @@ body {
   margin-top: 70px;
   padding: 70px 0 70px;
 }
+#renderings .rendering canvas[class*="span"] {
+  margin-left: 0;
+}

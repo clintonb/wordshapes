@@ -2,14 +2,20 @@
 (function() {
 
   $(document).ready(function() {
-    var $canvas, $text, draw, drawWrapper, processingInstance;
+    var $canvas, $no_renderings, $text, draw, drawWrapper, processingInstance;
     $text = $("#texts");
     $canvas = $("#renderings");
+    $no_renderings = $("#renderings-outer .no-renderings");
     processingInstance = null;
+    $(document).bind('drawFinished', function(e) {
+      return $no_renderings.hide();
+    });
     draw = function() {
       var texts, value;
       value = $text.val();
       texts = value.split(/\r\n|\r|\n/);
+      $no_renderings.show();
+      $canvas.empty();
       return processingInstance = app.wordshapeMulti(texts, $canvas);
     };
     drawWrapper = function(evt) {
