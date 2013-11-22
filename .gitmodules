@@ -4,6 +4,3 @@
 [submodule "qunit"]
 	path = qunit
 	url = git://github.com/jquery/qunit.git
-[submodule "processing-js"]
-	path = processing-js
-	url = git://github.com/processing-js/processing-js.git
