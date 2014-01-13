@@ -1,4 +1,4 @@
 source 'http://rubygems.org'
 
 gem 'bundler'
-gem 'capistrano', '~> 2.15.5'
+gem 'capistrano', '~> 3.0.1'
