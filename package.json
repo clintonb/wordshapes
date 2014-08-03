@@ -1,0 +1,13 @@
+{
+  "name": "wordshapes",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clintonb/wordshapes.git"
+  },
+  "devDependencies": {
+    "karma": "^0.12.19",
+    "karma-jasmine": "^0.2.2",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
