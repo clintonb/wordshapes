@@ -1,5 +1,5 @@
 set :application, 'wordshapes'
-set :repo_url, 'ssh://git@git.assembla.com/wordshapes.git'
+set :repo_url, 'ssh://git@github.com/clintonb/wordshapes.git'
 set :deploy_to, "/var/www/#{fetch(:application)}"
 
 branch = ENV['BRANCH'] || ENV['TAG'] || ENV['REVISION'] || :master
