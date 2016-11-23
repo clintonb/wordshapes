@@ -1,11 +1,9 @@
 set :application, 'wordshapes'
-set :repo_url, 'ssh://git@github.com/clintonb/wordshapes.git'
-set :deploy_to, "/var/www/#{fetch(:application)}"
+set :repo_url, 'https://github.com/clintonb/wordshapes.git'
 
 branch = ENV['BRANCH'] || ENV['TAG'] || ENV['REVISION'] || :master
 set :branch, branch
 
-set :ssh_options, {:forward_agent => true}
 
 namespace :deploy do
 

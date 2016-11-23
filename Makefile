@@ -2,8 +2,8 @@ requirements:
 	bundle install
 	npm install
 
-deploy: requirements
+deploy:
 	bundle exec cap production deploy
 
-test: requirements
+test:
 	./node_modules/karma/bin/karma start --single-run
