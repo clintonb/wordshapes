@@ -1,6 +1,6 @@
 requirements:
 	bundle install
-	npm install
+	yarn install
 
 deploy:
 	bundle exec cap production deploy
