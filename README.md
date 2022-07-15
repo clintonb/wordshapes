@@ -10,4 +10,4 @@ Testing
 
 Deployment
 ----------
-    $ make deploy
+Push to the main branch, and Netlify will do the rest.
