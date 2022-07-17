@@ -15,10 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'js/app.js',
-      'vendor/Keyboard-Heatmap/app/keyboard-layouts.js',
-      'js/keymapper.js',
-      'js/tests/*.js'
+      'public/js/app.js',
+      'public/js/vendor/keyboard-layouts.js',
+      'public/js/keymapper.js',
+      'tests/*.js'
     ],
 
 

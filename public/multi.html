@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Wordshapes</title>
+  <title>Wordshapes: Multi</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="css/main.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -12,27 +12,35 @@
   <div class="navbar-inner">
     <a class="brand" href="/">Wordshapes</a>
     <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="multi.html">Multi</a></li>
+      <li class=""><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Multi</a></li>
     </ul>
   </div>
 </div>
 
 <div class="container">
-  <p>Create images from <a href="http://www.swype.com/">Swype</a> motions.</p>
+  <h1>Multiple Image Generator</h1>
+  <p>Enter a words/phrases in the area below. Each line (separated by a carriage return) will be rendered as an individual image.</p>
 
-  <canvas id="canvas" height="373" width="800"></canvas>
-  <div class="input-append">
-    <input class="span3" type="text" placeholder="Type something..." id="text">
-    <button class="btn" type="button" id="drawBtn">Draw!</button>
-    <a href="#" class="btn" id="saveBtn">Save</a>
+  <textarea id="texts" rows="6" class="span12"></textarea><br>
+  <div class="span12" style="text-align: center;">
+    <button class="btn" type="button" id="multiDrawBtn">Draw!</button>
+  </div>
+
+  <div>
+    <h2>Rendered Images</h2>
+    <div id="renderings-outer" class="row">
+      <p class="no-renderings span12">Nothing to see here.</p>
+      <p class="instructions span12" style="display: none;">Click an image below to download a full-size PNG.</p>
+      <div id="renderings"></div>
+    </div>
   </div>
 </div>
 
 <footer class="footer">
   <div class="container">
     <p>
-      Developer: <a href="https://clintonblackburn.com">Clinton Blackburn</a><br>
+      Developer: <a href="http://clintonblackburn.com">Clinton Blackburn</a><br>
       Original Concept: <a href="http://dianasaville.com/">Diana Saville</a>
     </p>
     <p>
@@ -41,13 +49,14 @@
   </div>
 </footer>
 
+
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="vendor/Keyboard-Heatmap/app/keyboard-layouts.js"></script>
+<script type="text/javascript" src="js/vendor/keyboard-layouts.js"></script>
 <script type="text/javascript" src="js/keymapper.js"></script>
 <script type="text/javascript" src="js/wordshape.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/multi.js"></script>
 <script type="text/javascript" src="js/ga_tracking.js"></script>
 
 </body>

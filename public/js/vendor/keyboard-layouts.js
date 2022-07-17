@@ -1,3 +1,7 @@
+/***
+ * Source: https://github.com/pa7/Keyboard-Heatmap
+ */
+
 app.LAYOUTS = {
     QWERTY: {
         "~": [35, 120, 70, 275],

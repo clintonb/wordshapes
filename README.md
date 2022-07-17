@@ -1,8 +1,10 @@
 Wordshapes
 ==========
 
-Wordshapes is a simple app that creates images from [Swype](http://www.swype.com/) motions. A live demo is available at
-[http://wordshapes.clintonblackburn.com/](http://wordshapes.clintonblackburn.com/).
+Wordshapes is a simple app that creates images from [Swype](https://www.swype.com/) motions. A live demo is available at
+[https://wordshapes.clintonblackburn.com/](https://wordshapes.clintonblackburn.com/).
+
+This project makes use of [Keyboard Heatmap](https://github.com/pa7/Keyboard-Heatmap).
 
 Testing
 -------
